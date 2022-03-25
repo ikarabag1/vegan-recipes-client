@@ -42,14 +42,14 @@ Vegan-Recipes-Server
 
 # Authentication
 | VERB   | URI Path                    | CRUD            | Description                                      |
-|--------|-----------------------------------------------|--------------------------------------------------|
+| :----: | :-------------------------: | :-------------: | :----------------------------------------------: |
 | GET    | `/profile`                  | Read            | displays user profile page                       |
 | PUT    | `/profile/:id`              | Update          | updates user profile                             |
 | DELETE | `/profile/:id`              | Destroy         | deletes profile                                  |
 
 # Routes
 | VERB   | URL Path                    | CRUD           | Description                                       |
-|--------|----------------------------------------------|---------------------------------------------------|
+| :----: | :-------------------------: | :------------: | :-----------------------------------------------: |
 | GET    | `/recipes`                  | Read           | displays recipes                                  |
 | GET    | `/recipes/:id`              | Show           | display the specific recipe                       |
 | POST   | `/recipes`                  | Create         | create a new recipe                               |
