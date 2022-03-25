@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# P3 PITCH
+- I would like to build vegan recipes app for people who chooses vegan life style to have exclusive part in this communityso they can create, edit and experiment new recipes and search for other users recipes and leave reviews/notes under each recipe as they like.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# User Stories
+- As a user I would like to; 
+- register to create an account and able to delete my accout.
+- login and logout of my account.
+- create, delete my vegan recipes in my profile.
+- have a home page that would display all recipes in the server.
+- have a profile page where I could edit my name, profile picture.
+- see a each recipe, pictures, descriptions and add it to favorites.
+- able to write reviews and edit them for each recipe.
 
-## Available Scripts
+# Tech stach:
+- Javascript
+- CSS/Bootstrap
+- React.js
+- express
+- MongoDB
+- Mongoose
 
-In the project directory, you can run:
+# Requirements:
+MongoDB
+NPM
+Vegan-Recipes-Server
 
-### `npm start`
+# ERDs 
+![Wireframes](public/wireframes/userschema.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Wireframes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# MVP goals
+- creating a Mern app using ReactJS ca nbe usable by many users;
+- can create recipes, make comments and edit all.
+- can display other recipes and added to favorites and make reviews.
+- edit or delete profile.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Stretch Goals
+- add music or more visual stuff
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Authentication
+| VERB   | URI Path                    |CRUD           | Description                                        |
+|--------|----------------------------------------------|---------------------------------------------------|
+| POST   | `/register`                 |Create          | sign up / registration page                       |
+| POST   | `/login`                    |Read            | login page -- findUser                            |
+| GET    | `/profile`                  |Read            | displays user profile page                        |
+| PUT    | `/profile/:id`              |Update          | updates user profile                              |
+| DELETE | `/profile/:id`              |Destroy         | deletes profile                                   |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Routes
+| VERB   | URL Path                    |CRUD           | Description                                        |
+|--------|----------------------------------------------|---------------------------------------------------|
+| GET    | `/`                         |Read            | Home                                              |
+| GET    | `/recipes`                  |Read            | displays recipes                                  |
+| GET    | `/recipes/:id`              |Show            | display the specific recipe                       |
+| POST   | `/recipes`                  |Create          | create a new recipe                               |
+| PUT    | `/recipes/:id`              |Update          | update the recipe created by user                 |
+| DELETE | `/recipes/:id`              |Destroy         | removes the recipe user created                   |
+| POST   | `/:recipesId/notes`         |Create          | add review or a note to specific recipe           |
+| PUT    | `/:recipesId/notes/:id`     |Update          | edit the reviews or note inserted in a recipe     |
+| GET    | `/:recipesId/notes`         |Read            | displays recipe notes                             |
+| DELETE | `/:recipesId/notes/:id`     |Destroy         | delete the note user inserted in a recipe         |
