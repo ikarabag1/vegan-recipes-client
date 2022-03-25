@@ -28,7 +28,7 @@ Vegan-Recipes-Server
 ![Wireframes](public/wireframes/userschema.png)
 
 # Wireframes
-
+![Wireframes](public/wireframes/wireframe.png)
 
 # MVP goals
 - creating a Mern app using ReactJS ca nbe usable by many users;
