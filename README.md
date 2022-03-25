@@ -37,28 +37,28 @@ Vegan-Recipes-Server
 - edit or delete profile.
 
 
-# Stretch Goals
-- add music or more visual stuff
-
 # Authentication
-| VERB   | URI Path                    | CRUD            | Description                                      |
-| :----: | :-------------------------: | :-------------: | :----------------------------------------------: |
-| GET    | `/profile`                  | Read            | displays user profile page                       |
-| PUT    | `/profile/:id`              | Update          | updates user profile                             |
-| DELETE | `/profile/:id`              | Destroy         | deletes profile                                  |
+| VERB   | URI Path                    | CRUD            | Description                             |
+| :----: | :-------------------------: | :-------------: | :-------------------------------------: |
+| POST   | `/register`                 | Create          | sign up/ user registeration             |
+| GET    | `/profile`                  | Read            | displays user profile page              |
+| POST   | `/login`                    | Read            | login /find user                        |
+| PUT    | `/profile/:id`              | Update          | updates user password                   |
+| DELETE | `/profile/:id`              | Destroy         | deletes profile                         |
 
 # Routes
-| VERB   | URL Path                    | CRUD           | Description                                       |
-| :----: | :-------------------------: | :------------: | :-----------------------------------------------: |
-| GET    | `/recipes`                  | Read           | displays recipes                                  |
-| GET    | `/recipes/:id`              | Show           | display the specific recipe                       |
-| POST   | `/recipes`                  | Create         | create a new recipe                               |
-| PUT    | `/recipes/:id`              | Update         | update the recipe created by user                 |
-| DELETE | `/recipes/:id`              | Destroy        | removes the recipe user created                   |
-| POST   | `/:recipesId/notes`         | Create         | add review or a note to specific recipe           |
+| VERB   | URL Path                    | CRUD           | Description                              |
+| :----: | :-------------------------: | :------------: | :--------------------------------------: |
+| GET    | `/`                         | Read           | Home | Layout                            |
+| GET    | `/recipes`                  | Read           | displays recipes                         |
+| GET    | `/recipes/:id`              | Show           | display the specific recipe              |
+| POST   | `/recipes`                  | Create         | create a new recipe                      |
+| PUT    | `/recipes/:id`              | Update         | update the recipe created by user        |
+| DELETE | `/recipes/:id`              | Destroy        | removes the recipe user created          |
+| POST   | `/:recipesId/notes`         | Create         | add review or a note to specific recipe  |
 
 # strech goals
-** editing comments 
-** deleting comments
-** display other user recipes
-** able to add comments on other user recipes and delete
+- editing comments 
+- deleting comments
+- display other user recipes
+- able to add comments on other user recipes and delete
