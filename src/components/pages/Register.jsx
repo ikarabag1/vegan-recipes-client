@@ -11,7 +11,8 @@ export default function Register({ currentUser, setCurrentUser }) {
     passwordConfirmation: ''
   })
   const [msg, setMsg] = useState('')
-
+  console.log(process.env.REACT_APP_SERVER_URL)
+  
   const handleSubmit = async e => {
     e.preventDefault()
     try {
@@ -19,6 +20,7 @@ export default function Register({ currentUser, setCurrentUser }) {
         // remove unneeded data in the form pre-request
         delete form.passwordConfirmation
         // do the axios since the passwords match
+       
         const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api-v1/users/register`, form)
         // get the token from the response
         const { token } = response.data

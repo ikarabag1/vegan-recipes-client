@@ -55,7 +55,7 @@ Vegan-Recipes-Server
 | POST   | `/recipes`                  | Create         | create a new recipe                      |
 | PUT    | `/recipes/:id`              | Update         | update the recipe created by user        |
 | DELETE | `/recipes/:id`              | Destroy        | removes the recipe user created          |
-| POST   | `/:recipesId/notes`         | Create         | add review or a note to specific recipe  |
+| POST   |  `/recipes/:id`          | Create         | add review or a note to specific recipe  |
 
 # strech goals
 - editing comments 
