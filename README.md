@@ -1,8 +1,8 @@
-# P3 PITCH
-- I would like to build vegan recipes app for people who chooses vegan life style to have exclusive part in this community so they can create, edit and experiment new recipes and search for other users recipes and leave reviews/notes under each recipe as they like.
+# VEGAN RECIPES APP
+- A vegan recipes app for people who chooses vegan life style to have exclusive part in this community so they can create, edit and experiment new recipes and search for other users recipes and leave reviews/notes under each recipe as they like.
 
 # User Stories
-- As a user I would like to; 
+As a user I would like to; 
 - register to create an account and able to delete my accout.
 - login and logout of my account.
 - create, delete my vegan recipes in my profile.
@@ -55,7 +55,7 @@ Vegan-Recipes-Server
 | POST   | `/recipes`                  | Create         | create a new recipe                      |
 | PUT    | `/recipes/:id`              | Update         | update the recipe created by user        |
 | DELETE | `/recipes/:id`              | Destroy        | removes the recipe user created          |
-| POST   |  `/recipes/:id`          | Create         | add review or a note to specific recipe  |
+| POST   | `/recipes/:id`              | Create         | add review or a note to specific recipe  |
 
 # strech goals
 - editing comments 
