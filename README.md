@@ -1,5 +1,5 @@
 # VEGAN RECIPES APP
-- A vegan recipes app for people who chooses vegan life style to have exclusive part in this community so they can create, edit and experiment new recipes and search for other users recipes and leave reviews/notes under each recipe as they like.
+- An app for people who chooses vegan life style to have exclusive part in this community so they can create, edit and experiment new recipes and search for other users recipes and leave reviews/notes under each recipe as they like.
 
 # User Stories
 As a user I would like to; 
@@ -7,9 +7,9 @@ As a user I would like to;
 - login and logout of my account.
 - create, delete my vegan recipes in my profile.
 - have a home page that would display all recipes.
-- have a profile page where I could edit my name.
-- see a each recipe, pictures, descriptions.
-- able to write reviews and edit them for each recipe.
+- have a profile edit page where I could udpate my password.
+- see each recipe, pictures, descriptions.
+- able to write notes or reviews.
 
 # Tech stach:
 - Javascript
@@ -28,13 +28,17 @@ Vegan-Recipes-Server
 ![Wireframes](public/wireframes/userschema.png)
 
 # Wireframes
-![Wireframes](public/wireframes/wireframe.png)
+![Wireframes](public/wireframes/wireframe.pdf)
 
 # MVP goals
-- creating a Mern app using ReactJS ca nbe usable by many users;
-- can create recipes, make comments and edit all.
-- can display the recipes and make reviews.
-- edit or delete profile.
+Building a Mern app using ReactJS can be usable by many users;
+- can create a profile.
+- can create recipes.
+- can display all recipes on profile.
+- can show specific recipe.
+- can add a review to each recipe.
+- can edit password.
+- can delete profile.
 
 
 # Authentication
@@ -49,7 +53,7 @@ Vegan-Recipes-Server
 # Routes
 | VERB   | URL Path                    | CRUD           | Description                              |
 | :----: | :-------------------------: | :------------: | :--------------------------------------: |
-| GET    | `/`                         | Read           | Home | Layout                            |
+| GET    | `/`                         | Read           | Welcome page                            |
 | GET    | `/recipes`                  | Read           | displays recipes                         |
 | GET    | `/recipes/:id`              | Show           | display the specific recipe              |
 | POST   | `/recipes`                  | Create         | create a new recipe                      |
