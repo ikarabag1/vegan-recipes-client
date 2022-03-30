@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom'
 export default function Register({ currentUser, setCurrentUser }) {
   const [form, setForm] = useState({
     email: '',
+    username:'',
     password: '',
     name: '',
     passwordConfirmation: ''
@@ -47,11 +48,19 @@ export default function Register({ currentUser, setCurrentUser }) {
 
   return (
     <div>
-      <h3>Become a User @ User App!</h3>
+      <h3>Be a part in Vegan community!</h3>
 
       <p>{msg}</p>
 
       <form onSubmit={handleSubmit}>
+      <label htmlFor="username">Username:</label>
+        <input 
+          type="username"
+          id="username"
+          value={form.username}
+          onChange={e => setForm({ ...form, username: e.target.value })}
+          placeholder='enter your username...'
+        />
         <label htmlFor="email">Email:</label>
         <input 
           type="email"

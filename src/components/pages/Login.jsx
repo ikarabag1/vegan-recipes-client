@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom'
 export default function Login({ currentUser, setCurrentUser }) {
   const [form, setForm] = useState({
     email: '',
+    username:'',
     password: ''
   })
   const [msg, setMessage] = useState('')
@@ -48,7 +49,14 @@ export default function Login({ currentUser, setCurrentUser }) {
           onChange={e => setForm({...form, email: e.target.value})}
           value={form.email}
         />
-
+          <label htmlFor="username">Username:</label>
+        <input 
+          id="username"
+          placeholder='username'
+          type="username"
+          onChange={e => setForm({...form, username: e.target.value})}
+          value={form.username}
+        />
         <label htmlFor="password">Password:</label>
         <input 
           id="password"

@@ -57,7 +57,7 @@ function App() {
           
           <Route 
             path="/profile"
-            element={currentUser ? <Profile  currentUser={currentUser} /> : <Navigate to="/login" />}
+            element={currentUser ? <Profile currentUser={currentUser} /> : <Navigate to="/login" />}
           />
 
           <Route 

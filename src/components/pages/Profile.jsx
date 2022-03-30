@@ -30,7 +30,7 @@ export default function Profile({ currentUser }) {
 
   return (
     <div>
-      <h3>{currentUser.name}'s Profile</h3>
+      <h3>{currentUser.username}'s Profile</h3>
 
       <p>your email is {currentUser.email}</p>
 
