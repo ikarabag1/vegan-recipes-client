@@ -28,7 +28,7 @@ As a user I would like to;
 ![Wireframes](public/wireframes/userschema.png)
 
 # Wireframes
-![Wireframes](public/wireframes/routeswireframe.png)
+![Wireframes](public/wireframes/wireframes.png)
 
 # MVP goals
 Building a Mern app using ReactJS can be usable by many users;
@@ -37,8 +37,6 @@ Building a Mern app using ReactJS can be usable by many users;
 - can display all recipes on profile.
 - can show specific recipe.
 - can add a review to each recipe.
-
-
 
 # Authentication
 | VERB   | URI Path  | CRUD   | Description   |
@@ -65,6 +63,8 @@ Building a Mern app using ReactJS can be usable by many users;
 - display other user recipes.
 - able to add comments on other user recipes and delete.
 - can edit password and delete account.
-| PUT    | `/profile/:id`  | Update   | updates user password |
-| DELETE | `/profile/:id`  | Destroy  | deletes profile    |
+| VERB  | URL Path  | CRUD  | Description  |
+| :----: | :-----: | :----: | :--------: |
+| PUT  | `/profile/:id` | Update | updates user password |
+| DELETE | `/profile/:id`| Destroy | deletes profile |
 
