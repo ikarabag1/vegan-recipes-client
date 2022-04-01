@@ -5,24 +5,23 @@
 As a user I would like to; 
 - register to create an account.
 - login and logout of my account.
-- create, delete my vegan recipes in my profile.
+- create, edit, delete my vegan recipes in my profile.
 - have a home page that would display all recipes.
-- have a profile edit page where I could udpate my password.
-- see each recipe, pictures, descriptions.
-- able to add notes or reviews.
+- show each recipe.
+- able to add notes or reviews to specific recipe.
 
 # Tech stach:
 - Javascript
-- CSS/Bootstrap
+- CSS
+- React Bootstrap
 - React.js
 - express
 - MongoDB
 - Mongoose
+- Node
 
-# Requirements:
-- MongoDB
-- NPM
-- Vegan-Recipes-Serever (API)
+
+- [Vegan Recipes Server-API Repository](https://github.com/ikarabag1/vegan-recipes-server)
 
 # ERDs 
 ![Wireframes](public/wireframes/userschema.png)
@@ -38,24 +37,27 @@ Building a Mern app using ReactJS can be usable by many users;
 - can show specific recipe.
 - can add a review to each recipe.
 
+## RESTful Routes Charts
 # Authentication
 | VERB   | URI Path  | CRUD   | Description   |
 | :---: | :--------: | :----: | :----------: |
 | POST  | `/register` | Create | sign up/ user registeration |
 | GET   | `/profile` | Read   | displays user profile page |
 | GET   | `/login`   | Read   | login /find user |
-| GET   | `/logout`  | Read   | logout user |
 
-# Routes
+
+# Rest of the outes
 | VERB  | URL Path  | CRUD  | Description  |
 | :----: | :-----: | :----: | :--------: |
 | GET    | `/`   | Read   | Welcome page   |
-| GET    | `/recipes` | Read | displays recipes   |
+| GET    | `/recipes`  | Read  | displays all recipes in db |
+| GET    | `/recipes/:userid` | Read | displays all recipes by specific user  |
 | GET    | `/recipes/:id` | Show  | display the specific recipe  |
-| POST   | `/recipes`  | Create  | create a new recipe  |
+| POST   | `/recipes/:userid`  | Create  | create a new recipe  |
 | PUT    | `/recipes/:id` | Update  | update the recipe created by user |
+| POST   | `/recipes/:id` | Create  | add review or a note to specific recipe  |
 | DELETE | `/recipes/:id` | Destroy  | removes the recipe user created  |
-| POST   | `/recipes/:id`  | Create  | add review or a note to specific recipe  |
+
 
 # Strech goals
 - editing comments.
@@ -65,6 +67,7 @@ Building a Mern app using ReactJS can be usable by many users;
 - can edit password and delete account.
 | VERB  | URL Path  | CRUD  | Description  |
 | :----: | :-----: | :----: | :--------: |
+| GET   | `/logout`  | Read   | logout user |
 | PUT  | `/profile/:id` | Update | updates user password |
 | DELETE | `/profile/:id`| Destroy | deletes profile |
 
